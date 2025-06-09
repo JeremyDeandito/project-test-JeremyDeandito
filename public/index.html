@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas - Suitmedia</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="header-logo">
+                <img src="assets/suitmedia.png" alt="Logo" class="logo">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#" class="active">Ideas</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner" id="banner">
+        <img id="bannerImage" src="assets/banner_placeholder.png" alt="Banner Image" class="banner-img">
+        <div class="banner-content">
+            <h1>Ideas</h1>
+            <p>Where all our great things begin</p>
+        </div>
+    </section>
+
+    <section class="main-content-container">
+        <main class="main-content">
+            <div class="controls">
+                <div class="showing-info" id="showingInfo">
+                    Showing 1 - 10 of 100
+                </div>
+                <div class="control-group">
+                    <label for="showPerPage">Show per page:</label>
+                    <select id="showPerPage">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy">
+                        <option value="-published_at">Newest</option>
+                        <option value="published_at">Oldest</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="posts-grid" id="postsGrid">
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading ideas...</p>
+            </div>
+
+            <div class="pagination" id="pagination">
+            </div>
+        </main>  
+    </section>
+    
+    <script type="module" src="../src/scripts/index.js" defer></script>
+</body>
+</html>
